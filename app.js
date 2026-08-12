@@ -5,7 +5,7 @@
     WebSocket Client
 */
 
-const WS_URL = "wss://anghezi-chat-server.onrender.com";
+const WS_URL = "wss://anghezi-chat-server.onrender.com/ws";
 
 let socket = null;
 let username = "";
