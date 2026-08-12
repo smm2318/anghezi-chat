@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>چت آنلاین انقزی</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-app">
+
+        <!-- هدر -->
+        <header class="chat-header">
+
+            <div class="brand">
+                <div class="logo">⚽</div>
+
+                <div>
+                    <h1>چت انقزی</h1>
+                    <span id="connectionStatus">
+                        در حال اتصال...
+                    </span>
+                </div>
+            </div>
+
+            <div class="online-box">
+                <span class="online-dot"></span>
+                <span id="onlineCount">0</span>
+                <span>آنلاین</span>
+            </div>
+
+        </header>
+
+
+        <div class="chat-layout">
+
+            <!-- ستون کاربران -->
+            <aside class="users-panel">
+
+                <div class="users-title">
+                    👥 کاربران آنلاین
+                </div>
+
+                <div id="usersList" class="users-list">
+
+                    <div class="user-item">
+                        <span class="user-dot"></span>
+                        <span>در حال بارگذاری...</span>
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- بخش اصلی چت -->
+            <main class="chat-main">
+
+                <!-- پیام‌ها -->
+                <section
+                    id="messages"
+                    class="messages"
+                ></section>
+
+
+                <!-- وضعیت تایپ -->
+                <div
+                    id="typingStatus"
+                    class="typing-status"
+                ></div>
+
+
+                <!-- ارسال پیام -->
+                <div class="message-area">
+
+                    <button
+                        id="emojiButton"
+                        class="emoji-button"
+                        type="button"
+                    >
+                        😊
+                    </button>
+
+                    <input
+                        id="messageInput"
+                        type="text"
+                        maxlength="500"
+                        placeholder="پیامت رو بنویس..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="sendButton"
+                        class="send-button"
+                        type="button"
+                    >
+                        ارسال
+                    </button>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- پنجره انتخاب نام -->
+    <div
+        id="usernameModal"
+        class="modal"
+    >
+
+        <div class="modal-box">
+
+            <div class="modal-icon">
+                ⚽
+            </div>
+
+            <h2>به چت انقزی خوش آمدی!</h2>
+
+            <p>
+                برای ورود به چت یک نام انتخاب کن
+            </p>
+
+            <input
+                id="usernameInput"
+                type="text"
+                maxlength="20"
+                placeholder="نام کاربری"
+                autocomplete="off"
+            >
+
+            <button
+                id="joinButton"
+                type="button"
+            >
+                ورود به چت 🚀
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- جاوااسکریپت -->
+    <script src="app.js"></script>
+
+</body>
+</html>
